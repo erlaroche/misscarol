@@ -2,23 +2,15 @@
 <p>Find me in app/views/welcome/index.html.erb</p> -->
 <!doctype html>
 	<html class="no-js" lang="en">
-
-	<head>
-		<meta charset="utf-8"/>
-		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-		<title>Miss Carol's Ballet Boutique | Welcome</title>
-		<link rel="stylesheet" href="http://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.min.css">
-	</head>
-
 	<body>
 		<div class="top-bar">
 			<div class="row">
 				<div class="top-bar-left">
 					<ul class="dropdown menu" data-dropdown-menu>
-						<li class="menu-text"><a href="#">Miss Carol's Ballet Boutique</a></li>
-						<li><a href="#">Contact Us</a></li>
-						<li><a href="#">Products</a></li>
-						<li><a href="#">Photo Gallary</a></li>
+						<li class="menu-text"><%= link_to "Miss Carol's Ballet Boutique", home_path %></li>
+						<li><%= link_to "Contact Us", contact_us_path %></li>
+						<li><%= link_to "Products", product_path %></li>
+						<li><%= link_to "Photos", photo_path %></a></li>
 					</ul>
 				</div>
 				<div class="top-bar-right"></div>
@@ -27,25 +19,25 @@
 		<br>
 		<div class="row">
 			<div class="medium-6 columns">
-				<img class="thumbnail" src="http://placehold.it/650x350">
+				<%= image_tag "bunny-band.jpg", class: 'thumbnail' %>
 					<div class="row small-up-4">
 						<div class="column">
-							<img class="thumbnail" src="http://placehold.it/250x200">
+							<%= image_tag "rose-band.jpg", class: 'thumbnail' %>
 						</div>
 						<div class="column">
-							<img class="thumbnail" src="http://placehold.it/250x200">
+							<%= image_tag "rose-band.jpg", class: 'thumbnail' %>
 						</div>
 						<div class="column">
-							<img class="thumbnail" src="http://placehold.it/250x200">
+							<%= image_tag "rose-band.jpg", class: 'thumbnail' %>
 						</div>
 						<div class="column">
-							<img class="thumbnail" src="http://placehold.it/250x200">
+							<%= image_tag "rose-band.jpg", class: 'thumbnail' %>
 						</div>
 					</div>
 				</div>
 			<div class="medium-6 large-5 columns">
-				<h3>About My Products</h3>
-				<p>I am very excited to introduce my business, Miss Carol’s Ballet Boutique. For many years, I have been using my talent to create headpieces for my ballet and tap dance classes’ recital costumes. This talent has lead me to create hair pieces that can be enjoyed year round, in and out of dance classes. Similar designs inspired me to create unique dance bags and everyday totes. Please enjoy browsing my online boutique and if you see something you like, please contact me so I can provide you with your very own Miss Carol’s Ballet Boutique masterpiece. Remember, each item is hand crafted and final products will vary. Custom orders are available based on time and materials. Please use the email contact link when you are ready to order your very own Miss Carol’s Ballet Boutique creation!</p>
+				<h3>About My Boutique</h3>
+				<p>I am very excited to introduce my business, <i>Miss Carol’s Ballet Boutique</i>. For many years, I have been using my talent to create headpieces for my ballet and tap dance classes’ recital costumes. This talent has lead me to create hair pieces that can be enjoyed year round, in and out of dance classes. Similar designs inspired me to create unique dance bags and everyday totes. Please enjoy browsing my online boutique and if you see something you like, please contact me so I can provide you with your very own Miss Carol’s Ballet Boutique masterpiece. Remember, each item is hand crafted and final products will vary. Custom orders are available based on time and materials. Please use the email contact link when you are ready to order your very own Miss Carol’s Ballet Boutique creation!</p>
 			</div>			
 		</div>
 		<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
