@@ -17,3 +17,12 @@
  */
 
  /*pic background-color: 9c9da1*/
+
+ /** Changes background color of the nav-bar **/
+** Changes background color, height and margin of the nav-bar **/
+div.top-bar, div.top-bar ul {
+	background-color: black;
+	height: 58px;
+    margin-bottom: 0;
+}
+
